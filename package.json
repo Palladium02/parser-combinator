@@ -8,6 +8,7 @@
     "test:char": "node ./test/char.test.js",
     "test:sequence": "node ./test/sequence.test.js",
     "test:anyOf": "node ./test/anyOf.test.js",
+    "test:nOf": "node ./test/nOf.test.js",
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "rm -rf ./build && tsc -p ./tsconfig.json",
