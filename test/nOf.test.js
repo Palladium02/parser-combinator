@@ -2,7 +2,7 @@ const {describe, it} = require('node:test');
 const assert = require('assert');
 const {nOf, char} = require('../build');
 
-describe('Testing char parser', () => {
+describe('Testing nOf parser', () => {
   const parser = nOf(2, char('a'));
   it('Should parse correct input', () => {
     const {result} = parser.parse('aa');

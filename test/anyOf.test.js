@@ -2,7 +2,7 @@ const {describe, it} = require('node:test');
 const assert = require('assert');
 const {anyOf, char} = require('../build');
 
-describe('Testing char parser', () => {
+describe('Testing anyOf parser', () => {
   const parser = anyOf(char('a'), char('b'));
   it('Should parse single character', () => {
     const {result} = parser.parse('a');
