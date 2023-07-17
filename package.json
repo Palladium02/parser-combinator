@@ -7,6 +7,7 @@
     "test": "echo \"Please specify which tests should be run (e.g. npm run test:<test name>)\"",
     "test:char": "node ./test/char.test.js",
     "test:sequence": "node ./test/sequence.test.js",
+    "test:anyOf": "node ./test/anyOf.test.js",
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "rm -rf ./build && tsc -p ./tsconfig.json",
