@@ -1,0 +1,27 @@
+{
+  "name": "parser-combinator",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Please specify which tests should be run (e.g. npm run test:<test name>)\"",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc -p ./tsconfig.json",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run lint"
+  },
+  "keywords": [
+    "parser",
+    "regex"
+  ],
+  "author": "Sean Meyer",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.18.53",
+    "gts": "^3.1.1",
+    "typescript": "~4.7.0"
+  }
+}
