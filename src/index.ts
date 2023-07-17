@@ -5,4 +5,5 @@ export {nOf} from './nOf';
 export {zeroOrMore} from './zeroOrMore';
 export {oneOrMore} from './oneOrMore';
 export {optional} from './optional';
+export {any} from './any';
 export type {ParseResult, Parser} from './types';
