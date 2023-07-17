@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Please specify which tests should be run (e.g. npm run test:<test name>)\"",
     "test:char": "node ./test/char.test.js",
+    "test:sequence": "node ./test/sequence.test.js",
     "lint": "gts lint",
     "clean": "gts clean",
-    "compile": "tsc -p ./tsconfig.json",
+    "compile": "rm -rf ./build && tsc -p ./tsconfig.json",
     "fix": "gts fix",
     "prepare": "npm.cmd run compile",
     "pretest": "npm.cmd run compile",
