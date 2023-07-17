@@ -6,4 +6,5 @@ export {zeroOrMore} from './zeroOrMore';
 export {oneOrMore} from './oneOrMore';
 export {optional} from './optional';
 export {any} from './any';
+export {word, lowercase, uppercase} from './word';
 export type {ParseResult, Parser} from './types';
