@@ -10,6 +10,7 @@
     "test:anyOf": "node ./test/anyOf.test.js",
     "test:nOf": "node ./test/nOf.test.js",
     "test:zeroOrMore": "node ./test/zeroOrMore.test.js",
+    "test:oneOrMore": "node ./test/oneOrMore.test.js",
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "rm -rf ./build && tsc -p ./tsconfig.json",
