@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Please specify which tests should be run (e.g. npm run test:<test name>)\"",
+    "test:char": "node ./test/char.test.js",
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "tsc -p ./tsconfig.json",
