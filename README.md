@@ -19,7 +19,7 @@ parser.parse('b'); // rejects
 
 ```
 
-### `sequence(...Parser[])`
+### `sequence(ps: ...Parser[])`
 
 Takes an array of parsers. The generated parses parses a string and
 checks if the parsers are satisfied in the given order.
@@ -32,7 +32,7 @@ parser.parse('ab'); // accepts
 parser.parse('ba'); // rejects
 ```
 
-### `anyOf(...Parser[])`
+### `anyOf(ps: ...Parser[])`
 
 Takes an array of parsers. The input must only satisfy only one of the given
 parsers.
@@ -56,7 +56,7 @@ parser.parse('aa'); // accepts
 parser.parse('ab'); // rejects
 ```
 
-### `zeroOrMore(Parser)`
+### `zeroOrMore(p: Parser)`
 
 Takes a parser. That parser can but must not be satisfied. If it is satisfied the parser greedily eats from the input until it cannot be satisfied anymore.
 
@@ -68,7 +68,7 @@ parser.parse('a'); // accepts
 parser.parse('aaa'); // also accepts
 ```
 
-### `oneOrMore(Parser)`
+### `oneOrMore(p: Parser)`
 
 Takes a parser. That parser but must be satisfied at least once. If it is satisfied the parser greedily eats from the input until it cannot be satisfied anymore.
 
@@ -100,7 +100,7 @@ any().parse('?'); // accepts
 any().parse('m'); // also fine
 ```
 
-### `word(string)`
+### `word(w: string)`
 
 This parser generator takes a string and transforms it into a sequence of `char()` parsers.
 
@@ -112,7 +112,7 @@ This is a parser that accpets any lowercase latin character.
 
 This is a parser that accepts any uppercase latin character.
 
-## Compose parsers
+## Comping parsers
 
 In this section I am going to show you how to
 compose parser to get a more complex parser.
