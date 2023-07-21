@@ -8,4 +8,5 @@ export {optional} from './optional';
 export {any} from './any';
 export {word, lowercase, uppercase} from './word';
 export {rangeOf} from './rangeOf';
+export {minOf} from './minOf';
 export type {ParseResult, Parser} from './types';
