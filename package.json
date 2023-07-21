@@ -14,6 +14,7 @@
     "test:optional": "node ./test/optional.test.js",
     "test:any": "node ./test/any.test.js",
     "test:word": "node ./test/word.test.js",
+    "test:rangeOf": "node ./test/rangeOf.test.js",
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "rm -rf ./build && tsc -p ./tsconfig.json",
