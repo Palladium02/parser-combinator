@@ -80,6 +80,38 @@ parser.parse('aaa'); // accepts
 parser.parse(''); // rejects
 ```
 
+### `minOf(n: number, p: Parser)`
+
+Takes a number n and a parser. The input must satisfy the parser at least n times.
+
+```ts
+const parser = minOf(2, char('a')); // <=> Regex(/a{2,}/)
+
+parser.parse('aa'); // accepts
+parser.parse('aaaa'); // accepts
+parser.parse('a'); // rejects
+```
+
+### `maxOf(n: number, p: Parser)`
+
+```ts
+const parser = maxOf(2, char('a')); // <=> Regex(/a{,2}/)
+
+parser.parse('aa'); // accepts
+parser.parse('a'); // accepts
+parser.parse('aaaa'); // rejects
+```
+
+### `rangeOf(r: [number, number], p: Parser)`
+
+```ts
+const parser = rangeOf([2,3], char('a')); // <=> Regex(/a{2,}/)
+
+parser.parse('aa'); // accepts
+parser.parse('aaa'); // accepts
+parser.parse('a'); // rejects
+```
+
 ### `optional(p: Parser)`
 
 Takes a parser. That parser can be satisfied but mustn't. It will only be satisfied once.
