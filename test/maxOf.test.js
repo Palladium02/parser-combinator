@@ -2,7 +2,7 @@ const {describe, it} = require('node:test');
 const assert = require('assert');
 const {maxOf, char} = require('../build');
 
-describe('Testing minOf parser', () => {
+describe('Testing maxOf parser', () => {
   const parser = maxOf(2, char('a'));
   it('Should parse upper bound', () => {
     const {result} = parser.parse('aa');
