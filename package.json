@@ -17,6 +17,7 @@
     "test:rangeOf": "node ./test/rangeOf.test.js",
     "test:minOf": "node ./test/minOf.test.js",
     "test:maxOf": "node ./test/maxOf.test.js",
+    "test:strict": "node ./test/strict.test.js",
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "rm -rf ./build && tsc -p ./tsconfig.json",
