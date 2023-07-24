@@ -10,4 +10,5 @@ export {word, lowercase, uppercase} from './word';
 export {rangeOf} from './rangeOf';
 export {minOf} from './minOf';
 export {maxOf} from './maxOf';
+export {strict} from './strict';
 export type {ParseResult, Parser} from './types';
