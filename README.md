@@ -132,6 +132,17 @@ any().parse('?'); // accepts
 any().parse('m'); // also fine
 ```
 
+### `strict(p: Parser)`
+
+Generates a parser that will only accept when there is no rest after parsing.
+
+```ts
+const parser = strict(nOf(3, char('a'))); // <=> Regex(/^a{3}$/)
+
+parser.parse('aaa'); // accepts
+parser.parse('aaaa'); // rejects
+```
+
 ### `word(w: string)`
 
 This parser generator takes a string and transforms it into a sequence of `char()` parsers.
